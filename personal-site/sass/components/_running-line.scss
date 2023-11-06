@@ -1,0 +1,26 @@
+.running-line {
+  width: 100vw;
+  height: 8rem;
+  background-color: $color-primary-dark;
+  display: flex;
+  align-items: center;
+
+  & > * + * {
+    margin-left: 20px;
+  }
+
+  &__text {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 4.9rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $color-white;
+
+    &--outline {
+      color: $color-primary-dark;
+      text-shadow: -1px -1px 0 $color-white, 1px -1px 0 $color-white,
+        -1px 1px 0 $color-white, 1px 1px 0 $color-white;
+    }
+  }
+}

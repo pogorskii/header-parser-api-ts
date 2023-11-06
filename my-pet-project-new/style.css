@@ -1,0 +1,318 @@
+:root {
+  --main-bg-color: #475569;
+  --main-color-light: #e879f9;
+  --text-light: #f1f5f9;
+  --text-dimmed: #cbd5e1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: "Manrope", sans-serif;
+  color: var(--text-light);
+  min-width: 540px;
+  margin: auto;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.header {
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.footer {
+  margin-top: 160px;
+  padding: 20px;
+  color: var(--text-dimmed);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #334155;
+}
+
+.footer div {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.footer-text {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.tg-logo {
+  stroke: var(--text-dimmed);
+  fill: none;
+}
+
+.month-selection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.month {
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.prev-month,
+.next-month {
+  width: 20px;
+  height: 20px;
+  border: 3px solid var(--text-dimmed);
+  transform: rotate(45deg);
+}
+
+.prev-month {
+  border-top: none;
+  border-right: none;
+}
+
+.next-month {
+  border-bottom: none;
+  border-left: none;
+}
+
+.logo-wrap img {
+  width: 50px;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav-button:link,
+.nav-button:visited {
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-dimmed);
+  display: inline-block;
+  padding: 10px 30px;
+  letter-spacing: 0.1em;
+  transition: 0.5s;
+}
+
+.nav-button:hover,
+.nav-button:active {
+  background-color: var(--main-color-light);
+  color: var(--main-color-light);
+  box-shadow: 0 0 15px var(--main-color-light);
+}
+
+.nav-button::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background-color: var(--main-bg-color);
+}
+
+.nav-button span {
+  position: relative;
+  z-index: 1;
+}
+
+.active::after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  content: "";
+  z-index: 1;
+  width: 100%;
+  height: 2px;
+  background-color: var(--main-color-light);
+}
+
+.calendar-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 15px;
+  width: 100%;
+}
+
+.calendar {
+  margin: 0 auto;
+}
+
+.calendar-card {
+  position: relative;
+  width: 250px;
+  height: 150px;
+  background-color: aliceblue;
+  display: flex;
+  align-items: flex-start;
+  align-self: center;
+  justify-content: end;
+  flex-direction: column;
+  padding: 10px;
+  transition: transform 0.2s;
+}
+
+.calendar-card img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+}
+
+.calendar-card:hover {
+  transform: scale(1.1);
+}
+
+.calendar-card:hover li::after {
+  opacity: 1;
+}
+
+.calendar-card::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    180deg,
+    transparent 25%,
+    rgba(0, 0, 0, 0.6) 75%,
+    rgba(0, 0, 0, 0.7)
+  );
+}
+
+.calendar-card figcaption {
+  z-index: 2;
+  color: var(--text-light);
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-right: 15%;
+  margin-bottom: 5px;
+}
+
+.calendar-card .platforms {
+  z-index: 2;
+  display: flex;
+  list-style: none;
+  column-gap: 5px;
+  font-size: 12px;
+}
+
+.platforms li {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 6px;
+}
+
+.platforms li::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-bg-color);
+  z-index: -1;
+  opacity: 0.5;
+  border-radius: 55px;
+  transition: 0.2s;
+}
+
+.calendar-card .day-number {
+  z-index: 2;
+  font-weight: 700;
+  width: 10%;
+  text-align: center;
+  order: -1;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 225px;
+  color: white;
+}
+
+.day-number::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-color-light);
+  opacity: 0.8;
+}
+
+.pc {
+  color: #e67e22;
+}
+
+.ps4 {
+  color: #3498db;
+}
+
+.ps5 {
+  color: #95a5a6;
+}
+
+.xbo {
+  color: #1abc9c;
+}
+
+.xbs {
+  color: #2ecc71;
+}
+
+.nsw {
+  color: #e74c3c;
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+  figure.calendar-card {
+    width: 500px;
+    height: 300px;
+    font-size: 40px;
+  }
+
+  .platforms li {
+    font-size: 20px;
+  }
+
+  .month {
+    font-size: 50px;
+  }
+}
+
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 601px) {
+  figure.calendar-card {
+    width: 250px;
+  }
+}

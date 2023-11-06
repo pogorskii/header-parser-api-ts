@@ -1,0 +1,141 @@
+.popup {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba($color-black, 0.85);
+  z-index: 9000;
+  transition: all 0.3s;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+
+  * {
+    cursor: initial;
+  }
+
+  @include hideEl;
+
+  @supports (-webkit-backdrop-filter: blur(10px)) or
+    (backdrop-filter: blur(10px)) {
+    -webkit-backdrop-filter: blur (10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba($color-black, 0.3);
+  }
+
+  &__content {
+    @include centerAbsolute;
+
+    display: table;
+    width: 75%;
+    background-color: $color-white;
+    border-radius: 3px;
+    overflow: hidden;
+
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: all 0.4s 0.2s;
+
+    @include respond(tab-port) {
+      display: block;
+    }
+  }
+
+  &__left {
+    display: table-cell;
+    width: 33.333333%;
+
+    @include respond(tab-port) {
+      display: flex;
+      width: 100%;
+    }
+  }
+
+  &__right {
+    display: table-cell;
+    width: 66.666667%;
+    padding: 3rem 5rem;
+    vertical-align: middle;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+
+    @include respond(tab-port) {
+      width: 50%;
+    }
+  }
+
+  &__text {
+    margin-bottom: 4rem;
+    font-size: 1.4rem;
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid $color-grey-light-1;
+    hyphens: auto;
+
+    @include respond(phone) {
+      column-count: unset;
+      font-size: 1.5rem;
+    }
+  }
+
+  &__button--nav {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 3rem;
+    font-weight: 300;
+    color: $color-white;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    background-image: linear-gradient(
+      300deg,
+      $color-white 0%,
+      $color-white 50%,
+      transparent 50%
+    );
+    background-size: 225%;
+    transition: all 0.4s;
+    counter-increment: menu;
+    cursor: pointer;
+
+    &::before {
+      content: "0" counter(menu) " ";
+    }
+
+    &:hover {
+      color: $color-primary;
+      transform: translateX(1rem);
+      background-position-x: 100%;
+    }
+  }
+
+  &__close {
+    display: inline-block;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    font-size: 3rem;
+    line-height: 0.5;
+    text-decoration: none;
+    color: $color-grey-dark;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  // Open states
+  &--active {
+    @include showEl;
+
+    .popup__content {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+}

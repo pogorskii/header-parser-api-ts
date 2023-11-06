@@ -1,0 +1,90 @@
+.offer {
+  &__card {
+    width: 35rem;
+    height: 56.6rem;
+    padding: 2.8rem 3.8rem;
+    border: 2px solid $color-black;
+    background-color: $color-white;
+
+    display: inline-flex;
+    flex-direction: column;
+    transition: all 300ms ease-out;
+
+    & > * + * {
+      margin-top: 3rem;
+    }
+
+    &:hover {
+      border-color: $color-secondary-light;
+      scale: 1.05;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+
+    & > * + * {
+      margin-left: 3rem;
+    }
+  }
+
+  &__icon {
+    width: 7.2rem;
+    height: 7.2rem;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  &__features {
+    list-style: none;
+
+    & > * + * {
+      margin-top: 1.5rem;
+    }
+  }
+
+  &__feature-item {
+    position: relative;
+    padding-left: 2.5rem;
+    font-weight: 450;
+    font-size: 1.6rem;
+    line-height: 100%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1.6rem;
+      height: 1.6rem;
+      border: 4px solid $color-secondary;
+      border-radius: 50%;
+    }
+  }
+
+  &__cta-box {
+    margin-top: auto;
+    text-align: center;
+  }
+
+  &__price-box {
+    margin-bottom: 0.5rem;
+    font-weight: 450;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 3.1rem;
+    line-height: 3.7rem;
+    text-align: center;
+    letter-spacing: 0.5px;
+  }
+}

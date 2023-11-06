@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <title>ChillaX Moscow &mdash; Лучшее лайфстайл-издание о Москве</title>
+  </head>
+  <body class="sticky show-sub-header">
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header-top__menu">
+            <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+          </div>
+          <a class="logo-link" href="#">
+            <img class="logo" src="img/chillax-logo.svg" alt="ChillaX Logo" />
+          </a>
+          <div class="header-top__city-container">
+            <div class="header-top__city">
+              <span class="header-top__city-item">Москва</span>
+              <ion-icon
+                class="arrow-down"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </div>
+            <div class="header-top__citylist">
+              <ul class="citylist__items">
+                <li class="citylist__item">
+                  <a class="citylist__link" href="#">Петербург</a>
+                </li>
+                <li class="citylist__item">
+                  <a class="citylist__link" href="#">Сочи</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul class="nav-header">
+            <li class="nav-header__item">
+              <a class="nav-header__item-link">Город</a>
+            </li>
+            <li class="nav-header__item">
+              <a class="nav-header__item-link">Кино</a>
+            </li>
+            <li class="nav-header__item">
+              <a class="nav-header__item-link">Рестораны</a>
+            </li>
+            <li class="nav-header__item">
+              <a class="nav-header__item-link">Мода и красота</a>
+            </li>
+            <li class="nav-header__item">
+              <a class="nav-header__item-link">Музыка и клубы</a>
+            </li>
+            <li class="nav-header__item">
+              <a class="nav-header__item-link">Спорт</a>
+            </li>
+            <li class="nav-header__item">
+              <a class="nav-header__item-link">Театр</a>
+            </li>
+            <li class="nav-header__item">
+              <a class="nav-header__item-link">Арт</a>
+            </li>
+            <li class="nav-header__item">
+              <a class="nav-header__item-link">Питомцы</a>
+            </li>
+            <li class="nav-header__item">
+              <a class="nav-header__item-link">Дети</a>
+            </li>
+            <li class="nav-header__item">
+              <a class="nav-header__item-link">
+                <span class="nav-header__cx">CX</span>
+                Выбор ChillaX</a
+              >
+            </li>
+            <li class="nav-header__item nav-header__dropdown-button">
+              <span class="nav-header__item-link nav-header__item-link-more">
+                Еще
+                <ion-icon
+                  class="arrow-down"
+                  name="chevron-down-outline"
+                ></ion-icon>
+              </span>
+              <ul class="nav-header nav-header-dropdown">
+                <li class="nav-header__item">
+                  <a class="nav-header__item-link" href="#">Игры</a>
+                </li>
+                <li class="nav-header__item">
+                  <a class="nav-header__item-link" href="#">Образование</a>
+                </li>
+                <li class="nav-header__item">
+                  <a class="nav-header__item-link" href="#">Chill In'</a>
+                </li>
+                <li class="nav-header__item">
+                  <a class="nav-header__item-link" href="#">Из Москвы</a>
+                </li>
+                <li class="nav-header__item">
+                  <a class="nav-header__item-link" href="#">Чтение</a>
+                </li>
+                <li class="nav-header__item">
+                  <a class="nav-header__item-link" href="#">Бизнес</a>
+                </li>
+                <li class="nav-header__item">
+                  <a class="nav-header__item-link" href="#">Здоровье</a>
+                </li>
+                <li class="nav-header__item">
+                  <a class="nav-header__item-link" href="#">Дом</a>
+                </li>
+                <li class="nav-header__item">
+                  <a class="nav-header__item-link" href="#">Транспорт</a>
+                </li>
+                <li class="nav-header__item">
+                  <a class="nav-header__item-link" href="#">Экология</a>
+                </li>
+                <li class="nav-header__item nav-header__item-dropdown">
+                  <a class="nav-header__item-link" href="#">Промо</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="search-box">
+            <ion-icon class="search-icon" name="search-outline"></ion-icon>
+            <ion-icon class="search-icon" name="close-outline"></ion-icon>
+          </div>
+          <div class="search-menu">
+            <div class="search-input-box">
+              <input class="search-field" type="text" placeholder="поиск" />
+              <ion-icon
+                class="search-input-icon"
+                name="arrow-forward-outline"
+              ></ion-icon>
+            </div>
+          </div>
+          <a href="#" class="header-top__calendar">
+            <ion-icon name="calendar-outline" class="calendar-icon"></ion-icon>
+          </a>
+        </div>
+
+        <div class="sidebar-mobile sidebar-mobile_active">
+          <div class="sidebar-mobile__close">
+            <ion-icon name="close-outline" class="close-icon"></ion-icon>
+          </div>
+          <div class="header-top__city-container">
+            <div class="header-top__city">
+              <span class="header-top__city-item">Москва</span>
+              <ion-icon
+                class="arrow-down"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </div>
+            <div class="header-top__citylist">
+              <ul class="citylist__items">
+                <li class="citylist__item">
+                  <a class="citylist__link" href="#">Петербург</a>
+                </li>
+                <li class="citylist__item">
+                  <a class="citylist__link" href="#">Сочи</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul class="nav-header">
+            <li class="nav-header__item search_mobile">
+              <a class="nav-header__item-link">
+                <ion-icon
+                  name="search-outline"
+                  class="mobile-search-icon"
+                ></ion-icon>
+                <span>Поиск</span>
+              </a>
+            </li>
+            <li class="nav-header__item">
+              <a class="nav-header__item-link">Город</a>
+            </li>
+            <li class="nav-header__item">
+              <a class="nav-header__item-link">Кино</a>
+            </li>
+            <li class="nav-header__item">
+              <a class="nav-header__item-link">Рестораны</a>
+            </li>
+            <li class="nav-header__item">
+              <a class="nav-header__item-link">Мода и красота</a>
+            </li>
+            <li class="nav-header__item">
+              <a class="nav-header__item-link">Музыка и клубы</a>
+            </li>
+            <li class="nav-header__item">
+              <a class="nav-header__item-link">Спорт</a>
+            </li>
+            <li class="nav-header__item">
+              <a class="nav-header__item-link">Театр</a>
+            </li>
+            <li class="nav-header__item">
+              <a class="nav-header__item-link">Арт</a>
+            </li>
+            <li class="nav-header__item">
+              <a class="nav-header__item-link">Питомцы</a>
+            </li>
+            <li class="nav-header__item">
+              <a class="nav-header__item-link">Дети</a>
+            </li>
+            <li class="nav-header__item">
+              <a class="nav-header__item-link">
+                <span class="nav-header__cx">CX</span>
+                Выбор ChillaX</a
+              >
+            </li>
+            <li
+              class="nav-header__item nav-header__dropdown-button mobile-more-button"
+            >
+              <span class="nav-header__item-link nav-header__item-link-more">
+                Еще
+                <ion-icon
+                  class="arrow-down more-icon"
+                  name="chevron-down-outline"
+                ></ion-icon>
+              </span>
+              <ul class="nav-header nav-header-dropdown mobile-more-list">
+                <li class="nav-header__item">
+                  <a class="nav-header__item-link" href="#">Игры</a>
+                </li>
+                <li class="nav-header__item">
+                  <a class="nav-header__item-link" href="#">Образование</a>
+                </li>
+                <li class="nav-header__item">
+                  <a class="nav-header__item-link" href="#">Chill In'</a>
+                </li>
+                <li class="nav-header__item">
+                  <a class="nav-header__item-link" href="#">Из Москвы</a>
+                </li>
+                <li class="nav-header__item">
+                  <a class="nav-header__item-link" href="#">Чтение</a>
+                </li>
+                <li class="nav-header__item">
+                  <a class="nav-header__item-link" href="#">Бизнес</a>
+                </li>
+                <li class="nav-header__item">
+                  <a class="nav-header__item-link" href="#">Здоровье</a>
+                </li>
+                <li class="nav-header__item">
+                  <a class="nav-header__item-link" href="#">Дом</a>
+                </li>
+                <li class="nav-header__item">
+                  <a class="nav-header__item-link" href="#">Транспорт</a>
+                </li>
+                <li class="nav-header__item">
+                  <a class="nav-header__item-link" href="#">Экология</a>
+                </li>
+                <li class="nav-header__item nav-header__item-dropdown">
+                  <a class="nav-header__item-link" href="#">Промо</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sub-header__container">
+          <div class="sub-header">
+            <ul class="sub-header__menu">
+              <li class="sub-header__menu-item">Чем заняться:</li>
+              <li class="sub-header__menu-item">
+                <a class="sub-header__menu-link" href="#">Сегодня</a>
+              </li>
+              <li class="sub-header__menu-item">
+                <a class="sub-header__menu-link" href="#">Завтра</a>
+              </li>
+              <li class="sub-header__menu-item">
+                <a class="sub-header__menu-link" href="#">Эта неделя</a>
+              </li>
+              <li class="sub-header__menu-item">
+                <a class="sub-header__menu-link" href="#">Следующая неделя</a>
+              </li>
+              <li class="sub-header__menu-item">
+                <a class="sub-header__menu-link" href="#"
+                  >Все события и места &rarr;</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="container">
+          <div class="main-block--top">
+            <div class="main-block--top__col1">
+              <div class="main-block--top__tag tag_theme_anime">Аниме</div>
+              <a href="#">
+                <div class="main-block--top__pic">
+                  <img src="img/v-feature.jpeg" />
+                </div>
+                <div class="main-block--top__overlay"></div>
+                <div class="main-block--top__content">
+                  <h1 class="main-block--top__caption">
+                    Все картины, получившие «Оскар» за лучший фильм
+                  </h1>
+                  <div class="main-block--top__text">
+                    Объявлены победители премии «Оскар-2023» и ChillaX
+                    предлагает вспомнить фильмы, которые Американская академия
+                    кинематографических искусств и наук признавала лучшими на
+                    протяжении многолетней истории премии. В списке есть
+                    мюзиклы, семейные комедии, тяжелые драмы, вестерны… И каждый
+                    фильм отражает историю своего года.
+                  </div>
+                </div>
+                <div class="main-block--top__time">
+                  <ion-icon class="time-icon" name="time-outline"></ion-icon>
+                  20 мин
+                </div>
+              </a>
+            </div>
+            <div class="main-block--top__col2">
+              <h3 class="main-block--top__h3 main-info__h3">Главное</h3>
+              <div class="main-info">
+                <a class="main-info__item" href="#">
+                  <img class="main-info__item-img" src="img/nail.webp" />
+                  <div class="main-info__item-category">Мода и красота</div>
+                  <div class="main-info__item-link">
+                    Как сделать настоящий голографический маникюр
+                  </div>
+                  <div class="main-info__item-time">
+                    <ion-icon class="time-icon" name="time-outline"></ion-icon>
+                    27 мин
+                  </div>
+                </a>
+                <a class="main-info__item" href="#">
+                  <img
+                    class="main-info__item-img"
+                    src="img/main-article-1.webp"
+                  />
+                  <div class="main-info__item-category">Город</div>
+                  <div class="main-info__item-link">
+                    10 идей для аниме-отдыха в Москве
+                  </div>
+                  <div class="main-info__item-time">
+                    <ion-icon class="time-icon" name="time-outline"></ion-icon>
+                    7 мин
+                  </div>
+                </a>
+                <a class="main-info__item" href="#">
+                  <img class="main-info__item-img" src="img/donna.webp" />
+                  <div class="main-info__item-category">Кино</div>
+                  <div class="main-info__item-link">
+                    10 самых недооцененных актрис
+                  </div>
+                  <div class="main-info__item-time">
+                    <ion-icon class="time-icon" name="time-outline"></ion-icon>
+                    7 мин
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="main-block--top__col3">
+              <div class="main-news mini">
+                <div class="main-news__caption">
+                  <h3 class="main-news__h3">Новости</h3>
+                  <a class="main-news__more" href="#">
+                    <ion-icon
+                      class="more-news-icon"
+                      name="refresh-outline"
+                    ></ion-icon>
+                    Еще 3
+                  </a>
+                </div>
+                <div class="main-news__item">
+                  <a class="main-news__item-link" href="#">
+                    <span class="main-news__item-time">11:41</span>
+                    В Москве открыли памятник авиаконструктору Андрею Туполеву
+                  </a>
+                </div>
+                <div class="main-news__item">
+                  <a class="main-news__item-link" href="#">
+                    <span class="main-news__item-time">13:47</span>
+                    Большинство москвичей наряжают елку снизу вверх
+                  </a>
+                </div>
+                <div class="main-news__item">
+                  <a class="main-news__item-link" href="#">
+                    <span class="main-news__item-time">16:22</span>
+                    В Московском зоопарке родились абсолютно все милые звери
+                  </a>
+                </div>
+                <a class="button" href="#">Все новости</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container container_main">
+          <div class="main-block">
+            <div class="main-block__col1">
+              <h3 class="main-block__col1-h3">Выбор ChillaX</h3>
+              <a class="left-card left-card_city" href="#">
+                <div class="left-card__title">15</div>
+                <div class="left-card__caption">
+                  лучших советов для празднования Нового года без лишних трат
+                </div>
+                <div class="left-card__time">
+                  <ion-icon class="time-icon" name="time-outline"></ion-icon>
+                  22 мин
+                </div>
+              </a>
+              <a class="left-card left-card_city" href="#">
+                <div class="left-card__title">10</div>
+                <div class="left-card__caption">
+                  самых красивых лавочек Москвы
+                </div>
+                <div class="left-card__time">
+                  <ion-icon class="time-icon" name="time-outline"></ion-icon>
+                  7 мин
+                </div>
+              </a>
+              <a class="left-card left-card_cinema" href="#">
+                <div class="left-card__title">100</div>
+                <div class="left-card__caption">главных фильмов XXI века</div>
+                <div class="left-card__time">
+                  <ion-icon class="time-icon" name="time-outline"></ion-icon>
+                  38 мин
+                </div>
+              </a>
+              <a class="left-card left-card_cinema" href="#">
+                <div class="left-card__title">10</div>
+                <div class="left-card__caption">
+                  актеров, ушедших из Голливуда на пике карьеры
+                </div>
+                <div class="left-card__time">
+                  <ion-icon class="time-icon" name="time-outline"></ion-icon>
+                  13 мин
+                </div>
+              </a>
+              <a class="button main-block__col1-button" href="#"
+                >Все подборки</a
+              >
+            </div>
+            <div class="main-block__col2">
+              <div class="main-block__col2">
+                <a class="card-type1" href="#">
+                  <div class="card-type1__pic">
+                    <img class="card-type1__img" src="img/andor.jpg" />
+                  </div>
+                  <div class="card-type1__title">
+                    Сериал на выходные. «Андор»
+                  </div>
+                  <div class="card-type1__time">
+                    <ion-icon class="time-icon" name="time-outline"></ion-icon>
+                    5 мин
+                  </div>
+                </a>
+                <a class="card-type2" href="#">
+                  <div class="card-type2__pic">
+                    <img class="card-type2__img" src="img/card-type2.jpeg" />
+                  </div>
+                  <div class="card-type2__overlay">
+                    <div class="card-type2__content-box">
+                      <div class="card-type2__content">
+                        <h4 class="card-type2__h4">
+                          Буб, боп и кек: 8 лучших концертов декабря
+                        </h4>
+                        <div class="card-type2__text">
+                          Декабрь – прекрасное время, чтобы отправиться на
+                          спектакль, тем более московские театры подготовили
+                          перед традиционным сезоном «елок» весьма
+                          содержательный и глубокий материал. Отличный шанс
+                          погрузиться в размышления о сущем и подвести итоги
+                          года. ChillaX подготовил для вас подборку интересных
+                          премьерных спектаклей на ближайший месяц.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-type2__time">
+                    <ion-icon class="time-icon" name="time-outline"></ion-icon>
+                    5 мин
+                  </div>
+                </a>
+                <a class="card-type3" href="#">
+                  <div class="card-type3__pic">
+                    <img class="card-type3__img" src="img/twilight.jpeg" />
+                  </div>
+                  <div class="card-type3__overlay">
+                    <div class="card-type3__content">
+                      <h4 class="card-type3__h4">
+                        Психологи разбирают отношения Беллы и Эдварда
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="card-type3__time">
+                    <ion-icon class="time-icon" name="time-outline"></ion-icon>
+                    6 мин
+                  </div>
+                </a>
+                <a class="card-type1" href="#">
+                  <div class="card-type1__pic">
+                    <img class="card-type1__img" src="img/eggnog.jpeg" />
+                  </div>
+                  <div class="card-type1__title">
+                    Необычные рецепты эгг-нога
+                  </div>
+                  <div class="card-type1__time">
+                    <ion-icon class="time-icon" name="time-outline"></ion-icon>
+                    15 мин
+                  </div>
+                </a>
+                <a class="card-type1" href="#">
+                  <div class="card-type1__pic">
+                    <img class="card-type1__img" src="img/card-type1.jpeg" />
+                  </div>
+                  <div class="card-type1__title">
+                    Взлет и падение Бритни Спирс
+                  </div>
+                  <div class="card-type1__time">
+                    <ion-icon class="time-icon" name="time-outline"></ion-icon>
+                    5 мин
+                  </div>
+                </a>
+                <a class="card-type4" href="#">
+                  <div class="card-type4__pic">
+                    <img class="card-type4__img" src="img/card-type4.jpeg" />
+                  </div>
+                  <div class="card-type4__overlay">
+                    <div class="card-type4__content-box">
+                      <div class="card-type4__content">
+                        <h4 class="card-type4__h4">
+                          Шерлок Холмс и чертоги кинематографа: 7 образов
+                          великого сыщика, о которых вы могли не знать
+                        </h4>
+                        <div class="card-type4__text">
+                          1 декабря 1887 года вышла в печать повесть «Этюд в
+                          багровых тонах», главным героем которой был сыщик с
+                          Бейкер-стрит по имени Шерлок Холмс. ChillaX вспоминает
+                          другие картины и образы сыщика, которые существуют в
+                          кинематографе – менее известные, но не менее
+                          интересные.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-type4__time">
+                    <ion-icon class="time-icon" name="time-outline"></ion-icon>
+                    10 мин
+                  </div>
+                </a>
+                <a class="card-type4" href="#">
+                  <div class="card-type4__pic">
+                    <img class="card-type4__img" src="img/moscow.jpeg" />
+                  </div>
+                  <div class="card-type4__overlay">
+                    <div class="card-type4__content-box">
+                      <div class="card-type4__content">
+                        <h4 class="card-type4__h4">
+                          Как наряжали Москву к празднованию Нового года за
+                          последнее десятилетие
+                        </h4>
+                        <div class="card-type4__text">
+                          Сыщик с Бейкер-стрит по имени Шерлок Холмс. ChillaX
+                          вспоминает другие картины и образы сыщика, которые
+                          существуют в кинематографе – менее известные, но не
+                          менее интересные.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-type4__time">
+                    <ion-icon class="time-icon" name="time-outline"></ion-icon>
+                    10 мин
+                  </div>
+                </a>
+                <a class="card-type1" href="#">
+                  <div class="card-type1__pic">
+                    <img class="card-type1__img" src="img/cat.webp" />
+                  </div>
+                  <div class="card-type1__title">Приютите это немедленно</div>
+                  <div class="card-type1__time">
+                    <ion-icon class="time-icon" name="time-outline"></ion-icon>
+                    5 мин
+                  </div>
+                </a>
+                <a class="card-type2" href="#">
+                  <div class="card-type2__pic">
+                    <img class="card-type2__img" src="img/eyes.webp" />
+                  </div>
+                  <div class="card-type2__overlay">
+                    <div class="card-type2__content-box">
+                      <div class="card-type2__content">
+                        <h4 class="card-type2__h4">
+                          Бывают разные: 7 самых большеглазых звезд Голливуда
+                        </h4>
+                        <div class="card-type2__text">
+                          Декабрь – прекрасное время, чтобы отправиться на
+                          спектакль, тем более московские театры подготовили
+                          перед традиционным сезоном «елок» весьма
+                          содержательный и глубокий материал. ChillaX подготовил
+                          для вас подборку интересных премьерных спектаклей на
+                          ближайший месяц.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-type2__time">
+                    <ion-icon class="time-icon" name="time-outline"></ion-icon>
+                    15 мин
+                  </div>
+                </a>
+                <a class="card-type3" href="#">
+                  <div class="card-type3__pic">
+                    <img class="card-type3__img" src="img/old.jpeg" />
+                  </div>
+                  <div class="card-type3__overlay">
+                    <div class="card-type3__content">
+                      <h4 class="card-type3__h4">
+                        Как повзрослели известные актеры и актрисы
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="card-type3__time">
+                    <ion-icon class="time-icon" name="time-outline"></ion-icon>
+                    6 мин
+                  </div>
+                </a>
+                <a class="card-type1" href="#">
+                  <div class="card-type1__pic">
+                    <img class="card-type1__img" src="img/girl.webp" />
+                  </div>
+                  <div class="card-type1__title">
+                    15 необычных трендов TikTok
+                  </div>
+                  <div class="card-type1__time">
+                    <ion-icon class="time-icon" name="time-outline"></ion-icon>
+                    8 мин
+                  </div>
+                </a>
+                <a class="card-type1" href="#">
+                  <div class="card-type1__pic">
+                    <img class="card-type1__img" src="img/eat.jpeg" />
+                  </div>
+                  <div class="card-type1__title">
+                    Как похудеть после праздников
+                  </div>
+                  <div class="card-type1__time">
+                    <ion-icon class="time-icon" name="time-outline"></ion-icon>
+                    5 мин
+                  </div>
+                </a>
+              </div>
+              <div class="section__action">
+                <button class="button news-block__button">
+                  <div>
+                    <ion-icon
+                      class="more-news-icon"
+                      name="refresh-outline"
+                    ></ion-icon>
+                    Еще 10
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-special"></div>
+        </div>
+        <div class="container footer__search-container">
+          <div class="footer-search footer__search">
+            <div class="footer-search__blocks">
+              <div class="footer-search__block1">
+                <h3 class="footer-search__block1-caption">
+                  Куда пойти в выходные?
+                </h3>
+                <div class="footer-search__block1-text">
+                  Подпишитесь на еженедельную рассылку
+                </div>
+              </div>
+              <div class="footer-search__block2">
+                <div class="input-container">
+                  <input
+                    id="input-for-subscribe-form"
+                    class="email-subscribe-form"
+                    type="email"
+                    name="email-subscribe"
+                    placeholder="Оставьте ваш e-mail"
+                    required
+                  />
+                  <button class="input-container__button" id="subscribe-button">
+                    <ion-icon
+                      class="arrow-right-icon"
+                      name="arrow-forward-outline"
+                    ></ion-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="footer__nav-container">
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-main" href="#">Город</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">В Москве</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Из Москвы</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Любовь в городе</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Городская афиша</a>
+              </li>
+            </ul>
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-main" href="#">Кино</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Афиша</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Календарь премьер</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Статьи и обзоры</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Кинотеатры Москвы</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Фильмы</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Сериалы</a>
+              </li>
+            </ul>
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-main" href="#">Рестораны</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Выбрать ресторан</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Выбор ChillaX</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Статьи и обзоры</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Добавить ресторан</a>
+              </li>
+            </ul>
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-main" href="#">Мода и красота</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Статьи и обзоры</a>
+              </li>
+            </ul>
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-main" href="#">Музыка и клубы</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Статьи и обзоры</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Концерты в Москве</a>
+              </li>
+            </ul>
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-main" href="#">Спорт</a>
+              </li>
+            </ul>
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-main" href="#">Театр</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Статьи и обзоры</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Театры от А до Я</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Афиша</a>
+              </li>
+            </ul>
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-main" href="#">Арт</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Все выставки</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Статьи и обзоры</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Выставочные залы</a>
+              </li>
+            </ul>
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-main" href="#">Питомцы</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Город</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Шоппинг</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Сервисы</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Важно знать</a>
+              </li>
+            </ul>
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-main" href="#">Дети</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Город</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Кино</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Рестотраны</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Развитие</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Спектакли</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-link" href="#">Мода и красота</a>
+              </li>
+            </ul>
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-main" href="#">Выбор ChillaX</a>
+              </li>
+            </ul>
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-main" href="#">Игры</a>
+              </li>
+            </ul>
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-main" href="#">Образование</a>
+              </li>
+            </ul>
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-main" href="#">Chill In'</a>
+              </li>
+            </ul>
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-main" href="#">Из Москвы</a>
+              </li>
+            </ul>
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-main" href="#">Чтение</a>
+              </li>
+            </ul>
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-main" href="#">Бизнес</a>
+              </li>
+            </ul>
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-main" href="#">Здоровье</a>
+              </li>
+            </ul>
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-main" href="#">Дом</a>
+              </li>
+            </ul>
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-main" href="#">Транспорт</a>
+              </li>
+            </ul>
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-main" href="#">Экология</a>
+              </li>
+            </ul>
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-main" href="#">Калейдоскоп</a>
+              </li>
+            </ul>
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-main" href="#">Промо</a>
+              </li>
+            </ul>
+            <ul class="footer__nav">
+              <li class="footer__nav-item">
+                <a class="footer__nav-item-main" href="#">Услуги</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__logo">
+            <a class="footer__logo-link" href="#"></a>
+          </div>
+          <div class="footer__socials-container">
+            <ul class="footer__socials">
+              <li>
+                <a
+                  class="footer__socials-item footer__socials-item-link"
+                  href="#"
+                  target="_black"
+                >
+                  <ion-icon name="logo-vk"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="footer__socials-item footer__socials-item-link"
+                  href="#"
+                  target="_black"
+                >
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="footer__socials-item footer__socials-item-link"
+                  href="#"
+                  target="_black"
+                >
+                  <ion-icon name="logo-tiktok"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="footer__socials-item footer__socials-item-link"
+                  href="#"
+                  target="_black"
+                >
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="footer__socials-item footer__socials-item-link"
+                  href="#"
+                  target="_black"
+                >
+                  <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="footer__socials-item footer__socials-item-link"
+                  href="#"
+                  target="_black"
+                >
+                  <ion-icon name="logo-yahoo"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-container">
+            <div class="footer__menu-item-circle"><span>18+</span></div>
+            <ul class="footer__menu">
+              <li class="footer__menu-item">
+                <a class="footer__menu-item-link" href="#">Редакция</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-item-link" href="#">Реклама</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-item-link" href="#">Вакансии</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-info">
+            Перепечатка материалов данного Сетевого издания «CHILLAX» возможна
+            только с письменного разрешения редакции. При цитировании ссылка на
+            www.chillax.ru обязательна. Обратная связь с on-line редакцией
+            <a href="mailto:contact@chillax.ru">contact@chillax.ru</a>
+          </div>
+          <div class="footer__copyright">
+            Design by
+            <a href="http://charmerstudio.com" rel="nofollow">Charmer</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="overlay"></div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="js/script.js"></script>
+  </body>
+</html>
